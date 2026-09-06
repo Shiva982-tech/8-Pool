@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://bhb0wyiqa0lf1"]
+
+[ext_resource type="Texture2D" uid="uid://e1l51segqax5" path="res://assests/table.png" id="1_02ppr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_02ppr"]
+size = Vector2(460, 351)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eotx8"]
+size = Vector2(45, 336)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x8522"]
+size = Vector2(44.5, 424)
+
+[node name="Table" type="Sprite2D" unique_id=1792997125]
+texture_filter = 1
+position = Vector2(13, 18)
+texture = ExtResource("1_02ppr")
+centered = false
+
+[node name="cushions" type="StaticBody2D" parent="." unique_id=1996546636]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="cushions" unique_id=577870927]
+polygon = PackedVector2Array(111, 78, 89, 57, 86, -269, 565, -274, 566, 56, 555, 78)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="cushions" unique_id=1622470449]
+polygon = PackedVector2Array(631, 77, 621, 57, 622, -274, 1102, -270, 1103, 57, 1083, 77)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="cushions" unique_id=2052134058]
+polygon = PackedVector2Array(1144, 97, 1123, 117, 1122, 561, 1144, 584, 1578, 581, 1574, 98)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="cushions" unique_id=1585379211]
+polygon = PackedVector2Array(623, 622, 632, 601, 1081, 600, 1102, 621, 1104, 1044, 624, 1042)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="cushions" unique_id=1218785796]
+polygon = PackedVector2Array(89, 622, 111, 601, 556, 601, 566, 622, 565, 1037, 99, 1046)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="cushions" unique_id=1321151620]
+polygon = PackedVector2Array(57, 98, 79, 118, 78, 560, 56, 582, -284, 584, -282, 96)
+
+[node name="pockets" type="Area2D" parent="." unique_id=999389046]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pockets" unique_id=793295662]
+position = Vector2(-163, -97)
+shape = SubResource("RectangleShape2D_02ppr")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="pockets" unique_id=34608395]
+position = Vector2(593.5, -105)
+shape = SubResource("RectangleShape2D_eotx8")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="pockets" unique_id=201254431]
+position = Vector2(1348, -94.5)
+shape = SubResource("RectangleShape2D_02ppr")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="pockets" unique_id=408349866]
+position = Vector2(1351, 777)
+shape = SubResource("RectangleShape2D_02ppr")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="pockets" unique_id=1154173042]
+position = Vector2(-159, 775)
+shape = SubResource("RectangleShape2D_02ppr")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="pockets" unique_id=1099078118]
+position = Vector2(593.75, 828)
+shape = SubResource("RectangleShape2D_x8522")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1732765254]

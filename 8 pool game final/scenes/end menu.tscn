@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cbmu5hogj0ear"]
+
+[ext_resource type="Texture2D" uid="uid://b701xslwwd5di" path="res://assets/win menu.png" id="1_2jrpn"]
+[ext_resource type="Script" uid="uid://dorgd2c62o6fg" path="res://scripts/start again.gd" id="2_2nshw"]
+[ext_resource type="Script" uid="uid://cncn431dgxo5k" path="res://scripts/main menu.gd" id="3_0gw3a"]
+
+[node name="Node2D" type="Node2D" unique_id=13225880]
+
+[node name="WinMenu" type="Sprite2D" parent="." unique_id=414692946]
+position = Vector2(600.5, 390.5)
+scale = Vector2(0.7805989, 0.75683594)
+texture = ExtResource("1_2jrpn")
+
+[node name="Button" type="Button" parent="WinMenu" unique_id=1017878811]
+offset_left = -302.9725
+offset_top = -19.158691
+offset_right = 304.25363
+offset_bottom = 127.50452
+flat = true
+script = ExtResource("2_2nshw")
+
+[node name="Button2" type="Button" parent="WinMenu" unique_id=456666557]
+offset_left = -301.69147
+offset_top = 146.00262
+offset_right = 305.5346
+offset_bottom = 288.70197
+flat = true
+script = ExtResource("3_0gw3a")
+
+[connection signal="pressed" from="WinMenu/Button2" to="WinMenu/Button" method="_on_button_2_pressed"]

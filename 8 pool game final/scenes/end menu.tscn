@@ -11,7 +11,7 @@ position = Vector2(600.5, 390.5)
 scale = Vector2(0.7805989, 0.75683594)
 texture = ExtResource("1_2jrpn")
 
-[node name="Button" type="Button" parent="WinMenu" unique_id=1017878811]
+[node name="play again" type="Button" parent="WinMenu" unique_id=1017878811]
 offset_left = -302.9725
 offset_top = -19.158691
 offset_right = 304.25363
@@ -19,7 +19,7 @@ offset_bottom = 127.50452
 flat = true
 script = ExtResource("2_2nshw")
 
-[node name="Button2" type="Button" parent="WinMenu" unique_id=456666557]
+[node name="main menu" type="Button" parent="WinMenu" unique_id=456666557]
 offset_left = -301.69147
 offset_top = 146.00262
 offset_right = 305.5346
@@ -27,4 +27,5 @@ offset_bottom = 288.70197
 flat = true
 script = ExtResource("3_0gw3a")
 
-[connection signal="pressed" from="WinMenu/Button2" to="WinMenu/Button" method="_on_button_2_pressed"]
+[connection signal="pressed" from="WinMenu/play again" to="WinMenu/play again" method="_on_pressed"]
+[connection signal="pressed" from="WinMenu/main menu" to="WinMenu/main menu" method="_on_pressed"]

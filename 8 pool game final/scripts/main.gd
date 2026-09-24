@@ -112,6 +112,7 @@ func _process(_delta):
 
 func _on_cue_shoot(power):
 	cue_ball.apply_central_impulse(power)
+	print(power)
 	shots += 1
 	$ShotsLabel.text = "SHOTS: " + str(shots)
 
